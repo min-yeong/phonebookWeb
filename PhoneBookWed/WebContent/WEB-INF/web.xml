@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <!--  Web Application의 Context 이름 -->
+  <display-name>PhoneBook</display-name>
+  
+  <!-- URL 지정하지 않았을 때 기본적으로 표시할 페이지 -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Context Parameter : 전체 웹응용프로그램이 공유하는 파라미터 변수 -->
+  <context-param>
+  	<param-name>appName</param-name>
+  	<param-value>PhoneBook</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>dbuser</param-name>
+  	<param-value>bituser</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>dbpass</param-name>
+  	<param-value>bituser</param-value>
+  </context-param>
+</web-app>
